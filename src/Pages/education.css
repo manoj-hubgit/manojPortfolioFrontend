@@ -1,0 +1,30 @@
+.education-img {
+    object-fit: cover; /* This will maintain aspect ratio while cropping */
+  }
+  
+  .eduLogo {
+    margin-top: 2rem;
+    width: 120px; /* Increased width */
+    height: 120px; /* Increased height */
+    border-radius: 50%; /* Make logos round */
+    object-fit: cover; /* Maintain aspect ratio */
+    border: 4px solid #000; /* Border around logos */
+  }
+  
+  .school-logo {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Same size as the logos */
+    height: 120px; /* Same size as the logos */
+    border: 4px solid #000; /* Border for better visibility */
+    border-radius: 50%; /* Make it round */
+    font-size: 28px; /* Adjust text size */
+    font-weight: bold; /* Make text bold */
+  }
+  
+
+  .edu{
+    margin-top: -7rem;
+  }
