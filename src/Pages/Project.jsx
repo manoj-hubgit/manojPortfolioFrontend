@@ -1,17 +1,21 @@
 import React from "react";
 import projectImg from "../assets/projectImg.jpg";
 import wideThoughts from "../assets/wideThoughts.png";
+import Ecommerce from "../assets/ecommerceSsImg.png";
+import BillHub from "../assets/BillHubSsImg.png";
+import "./project.css";
+import "./font.css";
 const Project = () => {
   return (
     <div>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-6">
+          <div className="col-md-6 col-sm-12">
             <img className="w-100 h-100" src={projectImg} alt="" />
           </div>
-          <div className="col-6 m-auto">
-            <h1 className="text-center ">Projects</h1>
-            <p className="text-center">
+          <div className="col-md-6 col-sm-12 m-auto">
+            <h1 className="text-center titleFonts">Projects</h1>
+            <p className="text-center paragraphs">
               My projects leverage a wide range of modern technologies. I
               specialize in creating dynamic web applications using the MERN
               stack and ensuring their scalability and performance.
@@ -21,100 +25,115 @@ const Project = () => {
       </div>
       <div className="container-lg">
         <div className="row">
-          <div className="col-6 mt-5">
+          <div className="col-md-6 col-sm-12 mt-5">
             <div className="card">
-              <img src={wideThoughts} className="card-img-top" alt="..." />
+              <img src={wideThoughts} className="card-img-top" alt="Wide Thoughts" />
               <div className="card-body">
-                <h5 className="card-title text-center">Wide Thoughts</h5>
-                <p className="card-text">
-                  WideThoughts is a platform dedicated to sharing articles on
-                  technology and personal development, aiming to inspire and
-                  inform readers.
+                <h5 className="card-title text-center subTitleFonts ">Wide Thoughts</h5>
+                <p className="card-text paragraphs">
+                  WideThoughts is a platform dedicated to sharing insightful
+                  articles on technology and personal development, aiming to
+                  inspire and inform readers. By offering diverse content, it
+                  encourages curiosity, discussions, and personal growth.
                 </p>
-                <div className="d-flex justify-content-evenly">
-                  <a href="#" className="btn btn-primary w-25">
-                    frontend
+                <div className="d-flex justify-content-evenly flex-wrap">
+                  <a
+                    href="https://github.com/manoj-hubgit/widethoughts-frontend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                    Frontend
                   </a>
-                  <a href="#" className="btn btn-primary w-25">
-                    backend
+                  <a
+                    href="https://github.com/manoj-hubgit/widethoughts-backend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                    Backend
                   </a>
-                  <a href="#" className="btn btn-primary w-25">
-                    live
+                  <a
+                    href="https://widethoughts.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                   Go Live
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="col-6 mt-5">
+          <div className="col-md-6 col-sm-12 mt-5">
             <div className="card">
-              <img src={wideThoughts} className="card-img-top" alt="..." />
+              <img src={Ecommerce} className="card-img-top" alt="AllBuy" />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  WideThoughts is a platform dedicated to sharing articles on
-                  technology and personal development, aiming to inspire and
-                  inform readers.
+                <h5 className="card-title text-center subTitleFonts">AllBuy</h5>
+                <p className="card-text paragraphs">
+                  AllBuy is an e-commerce platform focused on offering a diverse
+                  range of clothing and accessories, providing users with a
+                  smooth and intuitive shopping experience through easy
+                  navigation and responsive design.
                 </p>
-                <div className="d-flex justify-content-evenly">
-                  <a href="#" className="btn btn-primary w-25">
-                    frontend
+                <div className="d-flex justify-content-evenly flex-wrap">
+                  <a
+                    href="https://github.com/manoj-hubgit/ECommerceFrontend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                    Frontend
                   </a>
-                  <a href="#" className="btn btn-primary w-25">
-                    backend
+                  <a
+                    href="https://github.com/manoj-hubgit/ECommerceBackend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                    Backend
                   </a>
-                  <a href="#" className="btn btn-primary w-25">
-                    live
+                  <a
+                    href="https://allbuy.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                    Go Live
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="col-6 mt-5 mb-lg-5">
+          <div className="col-md-6 col-sm-12 mt-5 mb-lg-5">
             <div className="card">
-              <img src={wideThoughts} className="card-img-top" alt="..." />
+              <img src={BillHub} className="card-img-top" alt="BillHub" />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  WideThoughts is a platform dedicated to sharing articles on
-                  technology and personal development, aiming to inspire and
-                  inform readers.
+                <h5 className="card-title text-center subTitleFonts">BillHub</h5>
+                <p className="card-text paragraphs">
+                  BillHub is a billing platform designed to help small shops
+                  manage invoicing and store data efficiently. It simplifies the
+                  billing process and generates accurate bills. With
+                  user-friendly features, it enhances overall operational
+                  efficiency.
                 </p>
-                <div className="d-flex justify-content-evenly">
-                  <a href="#" className="btn btn-primary w-25">
-                    frontend
-                  </a>
-                  <a href="#" className="btn btn-primary w-25">
-                    backend
-                  </a>
-                  <a href="#" className="btn btn-primary w-25">
-                    live
-                  </a>
+                <div className="progress">
+                  <div
+                    className="progress-bar"
+                    role="progressbar"
+                    style={{ width: "50%" }}
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6 mt-5 mb-5">
-            <div className="card">
-              <img src={wideThoughts} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  WideThoughts is a platform dedicated to sharing articles on
-                  technology and personal development, aiming to inspire and
-                  inform readers.
-                </p>
-                <div className="d-flex justify-content-evenly">
-                  <a href="#" className="btn btn-primary w-25">
-                    frontend
-                  </a>
-                  <a href="#" className="btn btn-primary w-25">
-                    backend
-                  </a>
-                  <a href="#" className="btn btn-primary w-25">
-                    live
-                  </a>
+                <div className="d-flex justify-content-center mt-2">
+                  <div className="spinner-border text-success mx-1" role="status">
+                    <span className="sr-only"></span>
+                  </div>
+                  <p>In Progress...</p>
                 </div>
               </div>
             </div>

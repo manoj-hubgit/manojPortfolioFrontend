@@ -1,0 +1,9 @@
+
+.btnclass{
+    background-color: rgb(104, 104, 255);
+    color: white;
+}
+.btnclass:hover{
+    background-color: rgb(78, 78, 255);  
+    color: aliceblue; 
+}

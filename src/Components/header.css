@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.headings {
+    font-family: "Pacifico", cursive;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.navtext{
+    font-size: 1rem;
+}
+
+.navtext .nav-link.active {
+    color: rgb(104, 104, 255); 
+    font-weight: bold; 
+    text-decoration: underline;
+  }

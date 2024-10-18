@@ -27,3 +27,14 @@
     font-size: 0.875rem;
   }
   
+  .formPlacing{
+    margin-left: 25%;
+   }
+
+
+@media (max-width: 767px){
+ .formPlacing{
+  padding-top: 5%;
+  margin-left: 18%;
+ }
+}
