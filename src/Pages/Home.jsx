@@ -70,7 +70,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="col-md-5 col-sm-12 mt-sm-3  text-center">
+        <div className="col-md-5 col-sm-11 mt-sm-3  text-center">
           <img src={profileImg} className="profileImage" alt="image" />
         </div>
       </div>
