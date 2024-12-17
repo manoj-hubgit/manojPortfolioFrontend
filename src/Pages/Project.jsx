@@ -72,7 +72,7 @@ const Project = () => {
             </div>
           </div>
 
-          <div className="col-md-6 col-sm-12 mt-5">s
+          <div className="col-md-6 col-sm-12 mt-5">
             <div className="card">
               <img src={BillHub} className="card-img-top" alt="BillHub" />
               <div className="card-body">
