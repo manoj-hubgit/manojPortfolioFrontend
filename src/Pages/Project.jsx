@@ -27,9 +27,15 @@ const Project = () => {
         <div className="row">
           <div className="col-md-6 col-sm-12 mt-5">
             <div className="card">
-              <img src={wideThoughts} className="card-img-top" alt="Wide Thoughts" />
+              <img
+                src={wideThoughts}
+                className="card-img-top"
+                alt="Wide Thoughts"
+              />
               <div className="card-body">
-                <h5 className="card-title text-center subTitleFonts ">Wide Thoughts</h5>
+                <h5 className="card-title text-center subTitleFonts ">
+                  Wide Thoughts
+                </h5>
                 <p className="card-text paragraphs">
                   WideThoughts is a platform dedicated to sharing insightful
                   articles on technology and personal development, aiming to
@@ -59,12 +65,57 @@ const Project = () => {
                     rel="noopener noreferrer"
                     className="btn btnclass mb-2"
                   >
-                   Go Live
+                    Go Live
                   </a>
                 </div>
               </div>
             </div>
           </div>
+
+          <div className="col-md-6 col-sm-12 mt-5 mb-lg-5">
+            <div className="card">
+              <img src={BillHub} className="card-img-top" alt="BillHub" />
+              <div className="card-body">
+                <h5 className="card-title text-center subTitleFonts">
+                  BillHub
+                </h5>
+                <p className="card-text paragraphs">
+                  BillHub is a billing platform designed to help small shops
+                  manage invoicing and store data efficiently. It simplifies the
+                  billing process and generates accurate bills. With
+                  user-friendly features, it enhances overall operational
+                  efficiency.
+                </p>
+                <div className="d-flex justify-content-evenly flex-wrap">
+                  <a
+                    href="https://github.com/manoj-hubgit/BillingApplicationFrontend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                    Frontend
+                  </a>
+                  <a
+                    href="https://github.com/manoj-hubgit/BillingApplicationBackend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                    Backend
+                  </a>
+                  <a
+                    href="https://billhub.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                    Go Live
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
           <div className="col-md-6 col-sm-12 mt-5">
             <div className="card">
@@ -107,37 +158,7 @@ const Project = () => {
             </div>
           </div>
 
-          <div className="col-md-6 col-sm-12 mt-5 mb-lg-5">
-            <div className="card">
-              <img src={BillHub} className="card-img-top" alt="BillHub" />
-              <div className="card-body">
-                <h5 className="card-title text-center subTitleFonts">BillHub</h5>
-                <p className="card-text paragraphs">
-                  BillHub is a billing platform designed to help small shops
-                  manage invoicing and store data efficiently. It simplifies the
-                  billing process and generates accurate bills. With
-                  user-friendly features, it enhances overall operational
-                  efficiency.
-                </p>
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    style={{ width: "50%" }}
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <div className="d-flex justify-content-center mt-2">
-                  <div className="spinner-border text-success mx-1" role="status">
-                    <span className="sr-only"></span>
-                  </div>
-                  <p>In Progress...</p>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
