@@ -80,11 +80,10 @@ const Project = () => {
                   BillHub
                 </h5>
                 <p className="card-text paragraphs">
-                  BillHub is a billing platform designed to help small shops
-                  manage invoicing and store data efficiently. It simplifies the
-                  billing process and generates accurate bills. With
-                  user-friendly features, it enhances overall operational
-                  efficiency.
+                  BillHub is a billing platform for small shops, streamlining
+                  invoicing and data management. It simplifies billing,
+                  generates accurate bills, and boosts operational efficiency
+                  with user-friendly features.
                 </p>
                 <div className="d-flex justify-content-evenly flex-wrap">
                   <a
@@ -115,7 +114,6 @@ const Project = () => {
               </div>
             </div>
           </div>
-
 
           <div className="col-md-6 col-sm-12 mt-5">
             <div className="card">
@@ -157,8 +155,6 @@ const Project = () => {
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
