@@ -49,7 +49,7 @@ const Home = () => {
             
               <a
                 className="resume-btn"
-                href="https://drive.google.com/file/d/1Vb72hVIb6otDa7MxfOYOtbkDzIE0fSHB/view?usp=sharing"
+                href="https://drive.google.com/file/d/1g7V-Hmlw64OU5nT0KdKIpT3Vp1hqxcnM/view?usp=sharing"
                 target="_blank"
               ><button className="res-btn btn mx-2 w-25 mb-2">
                 Resume</button>
