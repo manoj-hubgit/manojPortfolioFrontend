@@ -3,8 +3,10 @@ import projectImg from "../assets/projectImg.jpg";
 import wideThoughts from "../assets/wideThoughts.png";
 import Ecommerce from "../assets/ecommerceSsImg.png";
 import BillHub from "../assets/BillHubSsImg.png";
+import EasyEval from "../assets/easyEvalImage.png"; 
 import "./project.css";
 import "./font.css";
+
 const Project = () => {
   return (
     <div>
@@ -115,7 +117,6 @@ const Project = () => {
             </div>
           </div>
 
-        
           <div className="col-md-6 col-sm-12 mt-5 mb-lg-5">
             <div className="card">
               <img src={Ecommerce} className="card-img-top" alt="AllBuy" />
@@ -156,6 +157,49 @@ const Project = () => {
               </div>
             </div>
           </div>
+
+          <div className="col-md-6 col-sm-12 mt-5 mb-lg-5">
+            <div className="card">
+            
+              <img src={EasyEval}  className="card-img-top" alt="EasyEval" />
+              <div className="card-body">
+                <h5 className="card-title text-center subTitleFonts">EasyEval</h5>
+                <p className="card-text paragraphs">
+                  EasyEval is an online assessment platform where users can
+                  take various quizzes and tests. It provides instant feedback
+                  on performance and helps in tracking progress, making learning
+                  more interactive and engaging.
+                </p>
+                <div className="d-flex justify-content-evenly flex-wrap">
+                  <a
+                    href="https://github.com/manoj-hubgit/assessmentSiteFrontend.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                    Frontend
+                  </a>
+                  <a
+                    href="https://github.com/manoj-hubgit/assessmentSiteBackend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                    Backend
+                  </a>
+                  <a
+                    href="https://easyeval.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btnclass mb-2"
+                  >
+                    Go Live
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
