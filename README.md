@@ -19,7 +19,7 @@ This is my personal portfolio website showcasing my projects, education, and con
 ## Connect with Me
 - **LinkedIn:** [https://www.linkedin.com/in/manoj312](https://www.linkedin.com/in/manoj312)
 - **GitHub:** [https://github.com/manoj-hubgit](https://github.com/manoj-hubgit)
-- **Email:** [manojannadurai2265@gmail.com](manojannaduari2265@gmail.com)
+- **Email:** manojannaduari2265@gmail.com
 
 ---
 Feel free to explore my portfolio and reach out for collaborations or opportunities!
