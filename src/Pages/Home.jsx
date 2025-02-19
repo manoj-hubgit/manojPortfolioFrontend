@@ -200,7 +200,7 @@ const Home = () => {
             </p>
             <p>
               <FaFeatherPointed /> Proficient in deploying applications on
-              platforms like Render and Netlify.
+              platforms like Netlify and  Render.
             </p>
           </div>
         </div>
