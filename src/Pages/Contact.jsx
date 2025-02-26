@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import contactImg from "../assets/contactImg.jpg";
 import { BiLogoGithub, BiLogoGmail, BiLogoLinkedin } from "react-icons/bi";
 import "./Home.css";
@@ -8,11 +8,14 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false); 
+
   const initialValues = {
     email: "",
     name: "",
     message: "",
   };
+
   const validationSchema = Yup.object({
     email: Yup.string()
       .email("Invalid email address")
@@ -22,6 +25,8 @@ const Contact = () => {
   });
 
   const handleSubmit = async (values, { resetForm }) => {
+    setLoading(true);
+
     try {
       const response = await fetch("https://manojportfoliobackend.onrender.com/api/contact", {
         method: "POST",
@@ -42,6 +47,8 @@ const Contact = () => {
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("There was an error submitting your message.");
+    } finally {
+      setLoading(false); 
     }
   };
 
@@ -61,17 +68,15 @@ const Contact = () => {
               look forward to hearing from you!
             </h5>
             <div className="d-flex justify-content-center mt-2">
-            <a
-              href="mailto:manojannadurai2265@gmail.com"
-              className="gmail logo">
-              <BiLogoGmail />
-            </a>
-            <a href="https://www.linkedin.com/in/manoj312/" target="_blank" className="linkedin logo">
-              <BiLogoLinkedin />
-            </a>
-            <a href="https://github.com/manoj-hubgit" target="_blank" className="github logo">
-              <BiLogoGithub />
-            </a>
+              <a href="mailto:manojannadurai2265@gmail.com" className="gmail logo">
+                <BiLogoGmail />
+              </a>
+              <a href="https://www.linkedin.com/in/manoj312/" target="_blank" className="linkedin logo">
+                <BiLogoLinkedin />
+              </a>
+              <a href="https://github.com/manoj-hubgit" target="_blank" className="github logo">
+                <BiLogoGithub />
+              </a>
             </div>
           </div>
         </div>
@@ -80,54 +85,30 @@ const Contact = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="formStyle">
-              <Formik
-                initialValues={initialValues}
-                validationSchema={validationSchema}
-                onSubmit={handleSubmit}
-              >
+              <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
                 <Form>
                   <div className="form-group">
-                    <Field
-                      name="email"
-                      type="email"
-                      placeholder="Your Email"
-                      className="form-control border-0"
-                    />
-                    <ErrorMessage
-                      name="email"
-                      component="div"
-                      className="text-danger"
-                    />
+                    <Field name="email" type="email" placeholder="Your Email" className="form-control border-0" />
+                    <ErrorMessage name="email" component="div" className="text-danger" />
                   </div>
                   <div className="form-group">
-                    <Field
-                      name="name"
-                      type="text"
-                      placeholder="Your Name"
-                      className="form-control border-0"
-                    />
-                    <ErrorMessage
-                      name="name"
-                      component="div"
-                      className="text-danger"
-                    />
+                    <Field name="name" type="text" placeholder="Your Name" className="form-control border-0" />
+                    <ErrorMessage name="name" component="div" className="text-danger" />
                   </div>
                   <div className="form-group">
-                    <Field
-                      name="message"
-                      as="textarea"
-                      placeholder="Message"
-                      className="form-control-textarea border-0"
-                    />
-                    <ErrorMessage
-                      name="message"
-                      component="div"
-                      className="text-danger"
-                    />
+                    <Field name="message" as="textarea" placeholder="Message" className="form-control-textarea border-0" />
+                    <ErrorMessage name="message" component="div" className="text-danger" />
                   </div>
                   <div className="form-group">
-                    <button type="submit" className="btn btn-primary py-2 px-3">
-                      Send
+                    <button type="submit" className="btn btn-primary py-2 px-3" disabled={loading}>
+                      {loading ? (
+                        <>
+                          <span className="spinner-border spinner-border-sm me-2"></span>
+                          Sending...
+                        </>
+                      ) : (
+                        "Send"
+                      )}
                     </button>
                   </div>
                 </Form>
@@ -141,3 +122,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

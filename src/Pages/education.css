@@ -24,6 +24,19 @@
     font-weight: bold; 
   }
   
+  .titleFonts {
+    font-size: 2rem;
+}
+
+.subTitleFonts {
+    font-size: 1.3rem; 
+}
+
+.paras {
+    font-size: 1rem;
+}
+
+
   @media (min-width: 767px){
     .edu{
       margin-top: -7rem;
