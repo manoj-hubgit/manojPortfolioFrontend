@@ -107,6 +107,17 @@
   color: #646cff;
 }
 
+.postman-icon{
+  color: #f05032;
+}
+
+.redux-icon{
+color: rgb(118, 74, 188);
+}
+
+.nodejs-icon{
+  color: #68A063; /* Typical Node.js green color */
+}
 
 @keyframes appear{
   from{

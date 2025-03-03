@@ -20,7 +20,7 @@ const Education = () => {
         </div>
       </div>
       <div className="container-lg edu mb-4">
-        <h1 className="text-center titleFonts mb-3">Certification</h1>
+        {/* <h1 className="text-center titleFonts mb-3">Certification</h1>
         <div className="row">
           <div className="col-3">
             <img className="eduLogo d-none d-md-block school-logo " src={guviLogo} alt="Guvi Logo" />
@@ -34,7 +34,7 @@ const Education = () => {
               Node.js.
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="row">
           <div className="text-center">
             <h1 className="mt-5 mb-3 titleFonts">Degrees Received</h1>
